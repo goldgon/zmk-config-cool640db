@@ -55,6 +55,20 @@
             timeout-ms = <200>;
         };
 
+        eq {
+            bindings = <&bt BT_CLR_ALL>;
+            key-positions = <0 10 20 30>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        bt0 {
+            bindings = <&bt BT_SEL 0>;
+            key-positions = <5 15 25 35>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
 
 
         ESC_ {
@@ -80,12 +94,7 @@
             layers = <0>;
         };
 
-        BT_ALL_CLEAR {
-            bindings = <&bt BT_CLR_ALL>;
-            key-positions = <9 8>;
-            layers = <2>;
-        };
-
+       
         MB1_ {
             bindings = <&mkp MB1>;
             key-positions = <4 3>;
