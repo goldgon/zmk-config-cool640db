@@ -148,7 +148,7 @@
 
         default_layer {
             bindings = <
-&kp ESCAPE          &kp Q        &kp E      &kp U         &kp P                                    &kp D        &kp T         &kp R       &lt 5 W       &mkp MB1
+&kp ESCAPE          &lt 5 Q        &kp E      &kp U         &kp P                                    &kp D        &kp T         &kp R       &lt 5 W       &mkp MB1
 
 &mt LSHIFT TAB      &lt 3 O        &lt 2 A      &lt 1 I         &mt LCTRL F                             &mt RCTRL H  &lt 1 Y         &lt 2 K       &lt 3 S       &mt LEFT_SHIFT B
 
@@ -201,8 +201,10 @@
 
         5{
             bindings = <
-&kp F1  &msc SCRL_RIGHT  &mmv MOVE_UP     &msc SCRL_UP  &kp F5                  &kp F6  &kp F7  &kp F8  &kp F9  &mkp MB1
-&none   &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &none                   &none   &none   &none   &kp JP_HASH   &none
+&kp F1  &msc SCRL_RIGHT  &mmv MOVE_Y(-2000)     &msc SCRL_UP  &kp F5                             &kp F6  &kp F7  &mmv MOVE_Y(-300)  &kp F9  &mkp MB1
+
+&none   &mmv MOVE_X(-2000) &mmv MOVE_Y(2000)    &mmv MOVE_X(2000)   &none                   &none    &mmv MOVE_X(-300) &mmv MOVE_Y(300)    &mmv MOVE_X(300)   &none
+
 &trans  &msc SCRL_LEFT   &trans           &msc SCRL_DOWN  &trans                                     &trans        &trans        &trans        &trans        &bt BT_CLR
 
 &none       &none   &none   &none   &none                                         &none          &none    &none   &none           &none
